@@ -1,0 +1,26 @@
+/* Cores, fontes e ajustes iguais aos prints */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.hero {
+    height: 80vh;
+    background: url('https://via.placeholder.com/1920x1080') no-repeat center center;
+    background-size: cover;
+}
+
+section {
+    padding: 60px 0;
+}
+
+.card {
+    border: 2px solid #333; /* deixa propositalmente feio */
+}
+
+footer {
+    font-size: 14px;
+}
