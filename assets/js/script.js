@@ -159,6 +159,7 @@ const translations = {
             <li>Treinamentos sobre boas práticas em Einstein Bot</li>
             <li>Atuação em Sales Cloud, Service Cloud, Maps e Cadence</li>
             <li>Experiência em diversos setores</li>
+            <li>Arquitetura de Salesforce</li>
             <li>Realização de treinamentos para desenvolvedores</li>
           </ul>
 
@@ -460,6 +461,7 @@ const translations = {
             <li>Trainings on best practices in Einstein Bot</li>
             <li>Work in Sales Cloud, Service Cloud, Maps and Cadence</li>
             <li>Experience in various sectors</li>
+            <li>Salesforce Architecture</li>
             <li>Trainings for developers</li>
           </ul>
 
