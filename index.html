@@ -1,572 +1,307 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mateus Ferian | Desenvolvedor Salesforce</title>
+
+  <!-- BOOTSTRAP -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
-  <style>
-:root {
-  /* ======== BACKGROUNDS ======== */
-  --bg-body-start: #111827;
-  --bg-body-end: #111827;
-  --bg-navbar: #111827;
-  --bg-navbar-brand-span: #6f42c1;
-  --bg-hero-circle: rgba(124,90,255,0.4);
-  --bg-sobre: #18212f;
-  --bg-sobre-card: #151c2b;
-  --bg-stat-box: #151c2b;
-  --bg-filosofia: rgba(20, 20, 45, 0.8);
-  --bg-social-hover: #8a63f6;
-  --bg-btn-gradient-start: #3b82f6;
-  --bg-btn-gradient-end: #a855f7;
 
-  /* ======== TEXTOS ======== */
-  --text-default: #fff;
-  --text-navbar-brand: #c7cad0;
-  --text-navbar-link: #c7cad0;
-  --text-navbar-link-hover: #9c84ff;
-  --text-hero-h1: #b8a4ff;
-  --text-hero-h2: #b19cff;
-  --text-hero-location: #aaa;
-  --text-hero-h3: #999;
-  --text-hero-description: #c7cad0;
-  --text-hero-link: #8a63f6;
-  --text-sobre-card: #c7cad0;
-  --text-stat-box: #fff;
-  --text-stat-box-p: #aaa;
-  --text-sobre-blue: #518ad2;
-  --text-sobre-green: #4add7f;
-  --text-sobre-rose: #bf83fb;
-
-  /* ======== BORDER ======== */
-  --border-stat-box: rgba(255, 255, 255, 0.08);
-  --border-radius-small: 5px;
-  --border-radius-medium: 10px;
-  --border-radius-large: 30px;
-
-  /* ======== SHADOWS ======== */
-  --shadow-hero-circle: #8a63f6;
-  --shadow-sobre-card: rgba(100, 100, 255, 0.1);
-  --shadow-sobre-card-hover: rgba(120, 100, 255, 0.3);
-}
-
-body {
-  background: radial-gradient(circle at 20% 20%, var(--bg-body-start), var(--bg-body-end) 70%);
-  color: var(--text-default);
-  font-family: "Poppins", sans-serif;
-  overflow-x: hidden;
-  position: relative;
-}
-
-/* ======== NAVBAR ======== */
-.navbar {
-  background: var(--bg-navbar) !important;
-  padding: 20px 0;
-}
-.navbar-brand {
-  font-weight: 600;
-  color: var(--text-navbar-brand) !important;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.navbar-brand span {
-  background: var(--bg-navbar-brand-span);
-  border-radius: var(--border-radius-small);
-  padding: 4px 8px;
-  color: var(--text-default);
-  font-weight: 700;
-  font-size: 0.9rem;
-}
-
-.nav-link {
-  color: var(--text-navbar-link) !important;
-  margin-left: 18px;
-  transition: 0.3s;
-}
-.nav-link:hover {
-  color: var(--text-navbar-link-hover) !important;
-}
-
-/* ======== HERO ======== */
-.secao {
-  position: relative;
-  z-index: 2;
-  min-width: 100vw;        /* ocupa 100% da largura da tela */
-  min-height: 100vh;      /* ocupa 100% da altura da tela */
-  display: flex;       /* centraliza o conteúdo facilmente */
-  flex-direction: column;
-  justify-content: center; /* centraliza verticalmente */
-  align-items: center;     /* centraliza horizontalmente */
-  margin: 0;           /* remove espaçamento externo */
-  padding: 0;
-}
-
-.hero {
-  text-align: center;
-}
-
-.hero .circle {
-  width: 150px;
-  height: 150px;
-  margin: 0 auto 20px;
-  border-radius: 50%;
-  background: radial-gradient(circle, var(--bg-hero-circle), rgba(0,0,0,0));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 0 25px var(--shadow-hero-circle);
-}
-.hero .circle h1 {
-  font-weight: 700;
-  color: var(--text-hero-h1);
-  font-size: 2.5rem;
-}
-.hero h2 {
-  font-size: 2.8rem;
-  font-weight: 700;
-  color: var(--text-hero-h2);
-}
-.hero p.location {
-  color: var(--text-hero-location);
-  font-size: 0.95rem;
-}
-.hero h3 {
-  margin-top: 15px;
-  color: var(--text-hero-h3);
-  font-weight: 400;
-}
-.hero p.description {
-  max-width: 650px;
-  margin: 20px auto;
-  color: var(--text-hero-description);
-  font-size: 1rem;
-}
-.hero a {
-  text-decoration: none;
-  color: var(--text-hero-link);
-  font-weight: 600;
-}
-.social-icons i {
-  font-size: 1.3rem;
-  color: var(--text-navbar-link);
-  margin: 0 10px;
-  background: rgba(255, 255, 255, 0.05);
-  padding: 12px;
-  border-radius: 50%;
-  transition: 0.3s;
-}
-.social-icons i:hover {
-  background: var(--bg-social-hover);
-  color: var(--text-default);
-  transform: scale(1.1);
-}
-.btn-gradient {
-  margin-top: 30px;
-  background: linear-gradient(90deg, var(--bg-btn-gradient-start), var(--bg-btn-gradient-end), var(--bg-btn-gradient-start));
-  background-size: 200%;
-  border: none;
-  padding: 12px 30px;
-  border-radius: var(--border-radius-large);
-  font-weight: 600;
-  color: var(--text-default);
-  transition: 0.3s;
-  animation: gradientMove 4s ease infinite;
-}
-
-@keyframes gradientMove {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-.btn-gradient:hover {
-  transform: scale(1.05);
-  opacity: 0.95;
-}
-
-
-
-.hero-title {
-  text-align: center;
-  font-weight: 700;
-  font-size: 2rem;
-  margin-top: 10%;
-}
-
-/* Animação de pulo */
-@keyframes bounce {
-  0% {
-    transform: translateY(0);
-  }
-  30% {
-    transform: translateY(-20px);
-  }
-  50% {
-    transform: translateY(0);
-  }
-  70% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-/* Classe usada para ativar o pulo */
-.bounce {
-  animation: bounce 0.6s ease;
-}
-
-
-/* ======== SOBRE MIM ======== */
-#sobre {
-  background-color: var(--bg-sobre);
-  padding: 100px 0;
-  margin-top: 120px;
-}
-#sobre h2 {
-  text-align: center;
- color: var(--text-hero-h2);
-  margin-bottom: 50px;
-  font-weight: 700;
-}
-
-#sobre h2::after {
-  content: "";
-  display: block;
-  width: 80px;
-  height: 3px;
-  background: linear-gradient(90deg, var(--bg-btn-gradient-start), var(--bg-btn-gradient-end), var(--bg-btn-gradient-start));
-  background-size: 200%;
-  margin: 10px auto 0;
-  border-radius: 2px;
-  animation: moverGradiente 4s linear infinite;
-}
-
-@keyframes moverGradiente {
-  0% {
-    background-position: 0%;
-  }
-  100% {
-    background-position: 200%;
-  }
-}
-
-
-/* Animação do gradiente */
-@keyframes moverGradiente {
-  0% {
-    background-position: 0%;
-  }
-  100% {
-    background-position: 200%;
-  }
-}
-
-
-.sobre-card {
-  background-color: var(--bg-sobre-card);
-  border-radius: var(--border-radius-medium);
-  padding: 25px;
-  color: var(--text-sobre-card);
-  box-shadow: 0 0 10px var(--shadow-sobre-card);
-  transition: 0.3s;
-}
-.sobre-card:hover {
-  box-shadow: 0 0 15px var(--shadow-sobre-card-hover);
-  transform: translateY(-5px);
-}
-
-.sobre-card2 {
-  background: linear-gradient(90deg, #1c2b43, #272743);
-  border-radius: var(--border-radius-medium);
-  padding: 25px;
-  color: var(--text-sobre-card);
-  box-shadow: 0 0 10px var(--shadow-sobre-card);
-  transition: 0.3s;
-}
-.sobre-card2:hover {
-  box-shadow: 0 0 15px var(--shadow-sobre-card-hover);
-  transform: translateY(-5px);
-}
-
-.sobre-card2 ul {
-  columns: 2; /* Divide a lista em 2 colunas */
-  -webkit-columns: 2;
-  -moz-columns: 2;
-
-  list-style-type: disc; /* Mantém os pontos padrão */
-  padding-left: 20px;
-}
-
-.sobre-card2 ul li {
-  margin-bottom: 8px;
-  color: #fff; /* Cor do texto */
-  position: relative;
-}
-
-/* Cor dos pontos em azul */
-.sobre-card2 ul li::marker {
-  color: var(--cor-azul); /* Azul padrão do Bootstrap */
-  font-size: 1.1em;
-}
-
-.sobre-cargo-1{
-  color: var(--text-sobre-blue);
-}
-
-.sobre-cargo-2{
-  color: var(--text-sobre-green);
-}
-
-.sobre-cargo-3{
-  color: var(--text-sobre-rose);
-}
-
-/* Nome da pessoa */
-.sobre-nome-pessoa {
-  color: var(--text-sobre-blue);
-}
-
-/* "Total qualidade!" */
-.sobre-texto-total-qualidade {
-  color: var(--text-sobre-rose);
-}
-
-/* 1º item — roxo */
-.sobre-card ul li:nth-child(1)::marker {
-  color: var(--text-sobre-blue);
-}
-
-/* 2º item — azul */
-.sobre-card ul li:nth-child(2)::marker {
-  color: var(--text-sobre-green);
-}
-
-/* 3º item — verde */
-.sobre-card ul li:nth-child(3)::marker {
-  color: var(--text-sobre-rose);
-}
-
-
-.titulo{
-  color:var(--text-default);
-}
-
-
-.stat-box {
-  background: var(--bg-stat-box);
-  border-radius: var(--border-radius-medium);
-  padding: 25px;
-  text-align: center;
-  color: var(--text-stat-box);
-  border: 1px solid var(--border-stat-box);
-}
-.stat-box p {
-  color: var(--text-stat-box-p);
-}
-
-/* ======== PARTÍCULAS ======== */
-#particles-js {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  pointer-events: none;
-}
-</style>
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 </head>
+
 <body>
+
   <div id="particles-js"></div>
 
+  <!-- ========================================================= -->
   <!-- NAVBAR -->
+  <!-- ========================================================= -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
+
       <a class="navbar-brand" href="#">
-        <span>MF</span> <p>Mateus Ferian</p>
+        <span>MF</span>
+        <p>Mateus Ferian</p>
       </a>
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Experiência</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Projetos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Educação</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiencia">Experiência</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#habilidades-tecnicas">Skills</a></li>
         </ul>
       </div>
+
     </div>
   </nav>
 
+  <!-- ========================================================= -->
   <!-- HERO -->
-  <section class="hero secao">
-    <div class="circle"><h1>MF</h1></div>
+  <!-- ========================================================= -->
+  <section class="hero secao" data-aos="fade-up">
+    <div class="circle">
+      <h1>MF</h1>
+    </div>
+
     <h2>Mateus Ferian</h2>
     <p class="location">📍 São Paulo, Brasil</p>
+
     <h3 class="hero-title">
       <span id="titulo-animado">Desenvolvedor Salesforce</span>
     </h3>
+
     <p class="description">
-      Especialista em Salesforce com mais de <a href="#">40 projetos</a> realizados, desenvolvedor Full-Stack apaixonado por criar soluções inovadoras e de alta qualidade.
-      Experiência em <a href="#">Salesforce</a>, <a href="#">Back-End Front-End Banco de Dados</a> e arquiteturas robustas.
+      Especialista em Salesforce com mais de <strong class="sobre-cargo-1">40 projetos</strong> realizados,
+      desenvolvedor Full-Stack apaixonado por criar soluções inovadoras e de alta qualidade.
+      Experiência em <strong class="sobre-cargo-1">Salesforce</strong>, <strong class="sobre-cargo-1">Back-End</strong>
+      <strong class="sobre-cargo-3">Front-End</strong>, <strong class="sobre-cargo-2"> Banco de Dados</strong> e
+      arquiteturas robustas.
     </p>
+
     <div class="social-icons">
-      <i class="bi bi-github"></i>
-      <i class="bi bi-linkedin"></i>
-      <i class="bi bi-envelope"></i>
+      <div class="social-buttons">
+        <a href="https://wa.me/5519998278991" target="_blank" class="social-btn whatsapp">
+          <i class="bi bi-whatsapp"></i>
+        </a>
+
+        <a href="mailto:mateusferian10@gmail.com" class="social-btn email">
+          <i class="bi bi-envelope"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/mateus-ferian/" target="_blank" class="social-btn linkedin">
+          <i class="bi bi-linkedin"></i>
+        </a>
+      </div>
     </div>
-    <button class="btn btn-gradient">Explore Meu Trabalho</button>
+
+    <a href="#sobre" class="btn btn-gradient">Explore Meu Trabalho</a>
+
   </section>
 
+  <!-- ========================================================= -->
   <!-- SOBRE MIM -->
+  <!-- ========================================================= -->
   <section id="sobre" class="mt-5 secao">
-    <div class="container">
-      <h2>Sobre Mim</h2>
+    <div class="container" data-aos="zoom-in">
+
+      <h2 class="titulo-h2">Sobre Mim</h2>
 
       <div class="row g-4 justify-content-center">
-        <div class="col-md-6">
-          <div class="sobre-card">
+
+        <div class="col">
+          <div class="sobre-video-container" data-aos="fade-up">
+            <div class="ratio ratio-16x9 sobre-video-wrapper">
+              <video class="sobre-video" controls poster="SEU_POSTER_AQUI.jpg">
+                <source src="https://www.youtube.com/watch?v=r8Dza8yP3fo" type="video/mp4">
+                Seu navegador não suporta vídeos HTML5.
+              </video>
+            </div>
+          </div>
+          <div class="sobre-card mt-3">
             <h5><strong class="titulo">Perfil Pessoal</strong></h5>
-            <p>Olá, tudo bem? Meu nome é <strong class="sobre-nome-pessoa">Mateus Ferian</strong>. Acredito que, além de atender às demandas, é fundamental garantir que todas as entregas sejam realizadas com <strong class="sobre-texto-total-qualidade">total qualidade!</strong></p>
+            <p>
+              Olá, tudo bem? Meu nome é
+              <strong class="sobre-nome-pessoa">Mateus Ferian</strong>.
+              Acredito que, além de atender às demandas, é fundamental garantir que todas as entregas sejam realizadas
+              com
+              <strong class="sobre-texto-total-qualidade">total qualidade!</strong>
+            </p>
             <ul>
-              <li> 💼 <strong class="sobre-cargo-1">Desenvolvedor Salesforce</strong> com expertise em Sales Cloud, Service Cloud e Einstein Bot.</li>
-              <li>🚀 <strong class="sobre-cargo-2">Full-Stack Developer</strong> especializado em Java, Node.js, React e arquiteturas robustas.</li>
-              <li>🌍 Experiência em <strong class="sobre-cargo-3">múltiplos setores</strong>: e-commerce, saúde, bancário, mineração e telecomunicações.</li>
+              <li>💼 <strong class="sobre-cargo-1">Desenvolvedor Salesforce Sênior</strong> com experiencias em Sales
+                Cloud, Service Cloud, Marketing Cloud, Data Cloud</li>
+              <li>🚀 <strong class="sobre-cargo-2">Full-Stack Developer</strong> especializado em Java, Node.js, React,
+                Banco de dados</li>
+              <li>🌍 Experiência em <strong class="sobre-cargo-3">múltiplos setores</strong>: e-commerce, saúde,
+                bancário, mineração e telecomunicações.</li>
             </ul>
           </div>
-
-            <div class="sobre-card2 mt-4">
-                <h5><strong class="titulo">Especialidades Principais</strong></h5>
-                <ul class="mb-0">
-                    <li>Einstein Bot</li>
-                    <li>Apex Programming</li>
-                    <li>CI/CD Implementation</li>
-                    <li>Microservices</li>
-                    <li>LWC Development</li>
-                    <li>API Integration</li>
-                    <li>Clean Architecture</li>
-                    <li>Database Design</li>
-                </ul>
-            </div>
         </div>
 
         <div class="col-md-5">
-          <div class="sobre-stats">
-            <div class="stat-box">
+          <div class="sobre-stats d-flex flex-column gap-3">
+
+            <div class="stat-box" data-aos="flip-left">
               <i class="bi bi-award text-primary"></i>
               <h4><strong class="titulo">40+</strong></h4>
               <p>Projetos Concluídos</p>
             </div>
-            <div class="stat-box">
+
+            <div class="stat-box" data-aos="flip-left">
               <i class="bi bi-robot text-info"></i>
               <h4><strong class="titulo">30+</strong></h4>
-              <p>Einstein Bots Criados</p>
+              <p>Bots de atendimento Criados</p>
             </div>
-            <div class="stat-box">
+
+            <div class="stat-box" data-aos="flip-left">
               <i class="bi bi-calendar3 text-success"></i>
               <h4><strong class="titulo">03+</strong></h4>
               <p>Anos de Experiência</p>
             </div>
-            <div class="stat-box">
+
+            <div class="stat-box" data-aos="flip-left">
               <i class="bi bi-lightning-charge text-warning"></i>
-              <h4><strong class="titulo">08+</strong></h4>
+              <h4><strong class="titulo">10+</strong></h4>
               <p>Setores Atendidos</p>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="filosofia mt-5">
+      <div class="filosofia stat-box mt-5" data-aos="fade-up">
         <h5><strong>Filosofia de Trabalho</strong></h5>
         <p>
-          “Além do desenvolvimento e configurações, também atuo na elaboração de <span style="color:#b19cff">arquiteturas para o CRM</span> e <span style="color:#b19cff">padronização de desenvolvimentos</span>,
+          “Além do desenvolvimento e configurações, também atuo na elaboração de
+          <span class="filosofia-1">arquiteturas para o CRM</span> e
+          <span class="filosofia-2">padronização de desenvolvimentos</span>,
           transformando regras de negócio em soluções Salesforce eficientes e escaláveis.”
         </p>
       </div>
     </div>
   </section>
 
+  <!-- ========================================================= -->
+  <!-- EXPERIÊNCIA PROFISSIONAL -->
+  <!-- ========================================================= -->
+  <section id="experiencia" class="experiencia-section container mt-5" data-aos="fade-left">
+
+    <h2 class="titulo-h2">Experiência Profissional</h2>
+
+    <div class="experiencia-container">
+
+      <aside class="experiencia-lista">
+
+        <div class="xp-item ativo" data-xp="datum" data-aos="fade-up">
+          <h3>Desenvolvedor Salesforce Senior</h3>
+          <p>Datum</p>
+          <span class="xp-data">Maio de 2025 - Atual</span>
+        </div>
+
+        <div class="xp-item" data-xp="dukotech" data-aos="fade-up">
+          <h3>Desenvolvedor Salesforce - Referencia Tecnica</h3>
+          <p>Duko Tecnologia</p>
+          <span class="xp-data">Setembro 2023 - Maio de 2025</span>
+        </div>
+
+        <div class="xp-item" data-xp="consulcl" data-aos="fade-up">
+          <h3>Desenvolvedor Full Stack</h3>
+          <p>Consulter – Consultoria</p>
+          <span class="xp-data">Abril 2024 - Maio 2024</span>
+        </div>
+
+        <div class="xp-item" data-xp="gerador" data-aos="fade-up">
+          <h3>Desenvolvedor Back-End</h3>
+          <p>Gerador de Devs</p>
+          <span class="xp-data">Junho 2022 - Agosto 2023</span>
+        </div>
+
+        <div class="xp-item" data-xp="garten" data-aos="fade-up">
+          <h3>Designer Digital</h3>
+          <p>Garten Seminovos</p>
+          <span class="xp-data">Janeiro 2022 - Junho 2022</span>
+        </div>
+
+      </aside>
+
+      <div class="experiencia-detalhes" id="xp-detalhes"></div>
+
+    </div>
+  </section>
+
+  <section class="secao projetos" id="projetos">
+    <div class="container mt-5">
+      <h2 class="titulo-h2">Projetos trabalhados</h2>
+      <div class="row g-2 justify-content-center" id="projetos-container">
+      </div>
+    </div>
+  </section>
+
+
+  <section id="habilidades-tecnicas" class="secao mt-5 container" data-aos="fade-up">
+    <div class="container">
+      <h2 class="titulo-h2">Habilidades Técnicas</h2>
+      <p class="subtitulo">
+        Domínio em tecnologias modernas com foco em qualidade, performance e boas práticas de desenvolvimento.
+      </p>
+
+      <div class="filtros d-flex flex-wrap justify-content-center mb-4 gap-3">
+        <button class="btn filtro-btn ativo btn-salesforce" data-categoria="salesforce">
+          <i class="bi bi-bar-chart-fill me-2"></i> Salesforce
+        </button>
+        <button class="btn filtro-btn btn-backend" data-categoria="backend">
+          <i class="bi bi-gear-fill me-2"></i> Back-End
+        </button>
+        <button class="btn filtro-btn btn-frontend" data-categoria="frontend">
+          <i class="bi bi-palette-fill me-2"></i> Front-End
+        </button>
+        <button class="btn filtro-btn btn-banco" data-categoria="banco">
+          <i class="bi bi-database-fill me-2"></i> Banco de Dados
+        </button>
+        <button class="btn filtro-btn btn-devops" data-categoria="devops">
+          <i class="bi bi-rocket-takeoff-fill me-2"></i> DevOps & Metodologias
+        </button>
+      </div>
+
+      <div id="conteudo-habilidades" class="row g-4 habilidades-tecnicas-card mt-5" data-aos="fade-up"></div>
+
+      <div class="d-flex flex-wrap justify-content-center gap-4 mt-5">
+
+        <div class="stat-box2 text-center p-4" data-aos="flip-*">
+          <i class="bi bi-award-fill text-warning fs-2 mb-2"></i>
+          <p class="mb-1">Certificações</p>
+          <h5 class="mb-0 tema">Em Progresso</h5>
+        </div>
+
+        <div class="stat-box2 text-center p-4" data-aos="flip-*">
+          <i class="bi bi-robot text-info fs-2 mb-2"></i>
+          <p class="mb-1">Especialização</p>
+          <h5 class="mb-0 tema">☁️ Projetos Salesforce</h5>
+          <small>Mais de 40 Projetos desenvolvidos</small>
+        </div>
+
+        <div class="stat-box2 text-center p-4" data-aos="flip-*">
+          <i class="bi bi-lightning-charge-fill text-danger fs-2 mb-2"></i>
+          <p class="mb-1">Metodologias</p>
+          <h5 class="mb-0">Ágil</h5>
+          <small>Scrum, Kanban, XP</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="pt-5 pb-3">
+    <div class="container">
+
+      <div class="text-center pt-3 mt-3 creditos ">
+        <p class="mb-1"> 2025 - Mateus Ferian</p>
+        <small>Tudo é construido com esforço e determinação</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================= -->
   <!-- SCRIPTS -->
+  <!-- ========================================================= -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script>
-    particlesJS("particles-js", {
-      particles: {
-        number: { value: 70 },
-        color: { value: "#8a63f6" },
-        shape: { type: "circle" },
-        opacity: { value: 0.3 },
-        size: { value: 2 },
-        line_linked: {
-          enable: true,
-          distance: 120,
-          color: "#8a63f6",
-          opacity: 0.2,
-          width: 1
-        },
-        move: { enable: true, speed: 1.2, direction: "none", out_mode: "out" }
-      },
-      interactivity: {
-        events: { onhover: { enable: true, mode: "repulse" }, onclick: { enable: true, mode: "push" } },
-        modes: { repulse: { distance: 80, duration: 0.4 }, push: { particles_nb: 4 } }
-      },
-      retina_detect: true
+    AOS.init({
+      duration: 1000,
+      once: true
     });
   </script>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const titulo = document.getElementById("titulo-animado");
-    const textos = [
-      "Desenvolvedor Salesforce",
-      "Desenvolvedor Full Stack"
-    ];
-    let index = 0;
-
-    setInterval(() => {
-      // Adiciona animação de pulo
-      titulo.classList.add("bounce");
-
-      // Troca o texto no meio da animação
-      setTimeout(() => {
-        index = (index + 1) % textos.length;
-        titulo.textContent = textos[index];
-      }, 300);
-
-      // Remove a classe após a animação para permitir repetição
-      setTimeout(() => {
-        titulo.classList.remove("bounce");
-      }, 600);
-    }, 2000); // troca a cada 10 segundos
-  });
-</script>
-
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  // Cria o áudio
-  const audio = new Audio("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3");
-  audio.loop = true;        // toca em loop infinito
-  audio.volume = 0.10;       // volume 10%
-  
-  // Função para tentar tocar o áudio
-  const playAudio = () => {
-    audio.play().catch(() => {
-      // Se o navegador bloquear o autoplay, aguarda interação do usuário
-      document.body.addEventListener("click", playAudio, { once: true });
-    });
-  };
-
-  // Tenta tocar imediatamente ao carregar
-  playAudio();
-});
-</script>
 </body>
+
 </html>
