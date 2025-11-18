@@ -118,17 +118,8 @@ const translations = {
 
           <h4>Principais Conquistas</h4>
           <ul class="xp-lista">
-            <li>Construção de Einstein Bots</li>
-            <li>Desenvolvimento em Apex, LWC, flows</li>
-            <li>Integrações com ferramentas externas</li>
-            <li>CI/CD para versionamento e deploy</li>
-            <li>Esteira De Deploy jenkins</li>
-            <li>Sales Cloud</li>
-            <li>Service Cloud</li>
-            <li>Atuação com Solução Tecnica em Marketing Cloud</li>
-            <li>Digital Engagement</li>
-            <li>Configurações Nativas</li>
-            <li>Experiência em canal de atendimento</li>
+            <li>Atuo como Desenvolvedor Salesforce Sênior em uma squad do setor bancário, entregando soluções alinhadas às necessidades do negócio e às exigências de performance e compliance do ambiente financeiro. Desenvolvo e desenho soluções utilizando Salesforce Core, Digital Engagement, Service Cloud, além de desenhos de soluções envolvendo Marketing Cloud e Data Cloud.</li>
+            <li>Trabalho na evolução de jornadas de atendimento ao cliente, desenvolvendo e aprimorando bots com o Einstein Bot e realizando integrações entre Salesforce e sistemas externos de backend. Minhas atividades incluem desenvolvimento em Apex, Flows, LWC, configurações nativas da plataforma, criação de relatórios, gestão de permissões e organização de dados, garantindo soluções escaláveis, eficientes e aderentes às melhores práticas da plataforma.</li>
           </ul>
 
           <h4>Tecnologias Utilizadas</h4>
@@ -139,6 +130,11 @@ const translations = {
             <span>Einstein Bot</span>
             <span>CI/CD</span>
             <span>Jenkins</span>
+            <span class="tag">Salesforce - Sales</span>
+            <span class="tag">Salesforce - Service Console</span>
+            <span class="tag">Salesforce - Data Cloud</span>
+            <span class="tag">Salesforce - Marketing Cloud</span>
+            <span class="tag">Salesforce - Digital Engagement</span>
           </div>
         `,
 
@@ -152,21 +148,35 @@ const translations = {
 
           <h4>Atividades</h4>
           <ul class="xp-lista">
-            <li>Construção de mais de 40 Projetos</li>
-            <li>Desenvolvimento em Apex, LWC e configurações avançadas</li>
-            <li>Integrações com ferramentas externas</li>
-            <li>CI/CD para versionamento e deploy</li>
-            <li>Treinamentos sobre boas práticas em Einstein Bot</li>
-            <li>Atuação em Sales Cloud, Service Cloud, Maps e Cadence</li>
-            <li>Experiência em diversos setores</li>
-            <li>Arquitetura de Salesforce</li>
-            <li>Realização de treinamentos para desenvolvedores</li>
+          <ul class="xp-lista">
+            <li>Iniciei minha trajetória com Salesforce atuando como Desenvolvedor Júnior na nuvem Sales Cloud, seguindo as boas práticas de desenvolvimento e desenvolvendo features, tanto Out-Of The Box (OOTB) quanto personalizadas. Realizei a construção de diversas soluções de CRM, incluindo a criação de objetos, regras de validação, relatórios, permissões, perfis, papéis, regras de compartilhamento, configurações, entre outras funcionalidades. Esse período foi fundamental para adquirir uma base sólida sobre a plataforma e aprofundar meu conhecimento em suas principais funcionalidades.</li>
+            <li>Após o primeiro mês, surgiram demandas relacionadas a APEX, LWC e à Service Claud com a construção de chatbots como o Einstein Bot para um dos maiores clientes da empresa. Assim, iniciei o desenvolvimento de fluxos e códigos Apex e  Einstein Bot. A partir desse primeiro projeto, passei a ser responsável pela construção de bots para diversos outros clientes da consultoria, sempre aprimorando as soluções e adequando os fluxos conforme as necessidades de cada negócio. Após seis meses, fui promovido a Desenvolvedor Pleno.</li>
+            <li>Ao longo dessa trajetória, construí mais de 30 bots e tive a oportunidade de compartilhar meu conhecimento com outros desenvolvedores, conduzindo treinamentos sobre boas práticas na criação e manutenção de Einstein Bots. Paralelamente, realizei demandas e aprofundei meus conhecimentos em Apex e Lightning Web Components (LWC), desenvolvendo interfaces customizadas, com foco em proporcionar maior usabilidade para os agentes que atuam nas soluções de CRM, principalmente nas nuvens Sales Cloud e Service Cloud.</li>
+            <li>Também atuei em integrações de ferramentas externas com o Salesforce.</li>
+            <li>Utilizei práticas de CI/CD para versionamento e implantação de código, garantindo ambientes de desenvolvimento organizados e seguros, além de promover implantações em produção de forma mais limpa e eficiente.</li>
+            <li>Minha experiência abrange mais de 40 projetos, todos envolvendo a construção de Einstein Bots e soluções nas nuvens Sales Cloud e Service Cloud. Além disso, tive a oportunidade de trabalhar com outros produtos, como Salesforce Maps e Cadence, atuo em diversos setores, incluindo e-commerce, saúde, bancário e mineração, o que me proporcionou uma visão ampla e diversificada sobre diferentes regras de negócio.</li>
+            <li>Além do desenvolvimento e configurações, também atuo na elaboração de arquiteturas para o CRM e padronização de desenvolvimentos, transformando regras de negócio em soluções Salesforce, bem como contato direto, através de reuniões, com clientes quando necessário de diferentes perfis e faixas etárias. Realizo acompanhamentos de viradas de projetos e suporte, garantindo qualidade para todas as minhas aplicações.sempre quando tem algum produto algo novo o desenvolvimento vem para mim isso faz com que eu adquira novas funcionalidades rapidamente </li>
+            <li>Após cerca de um ano, tornei-me referência técnica na consultoria em desenvolvimento</li>
+          </ul>
           </ul>
 
           <h4>Tecnologias Utilizadas</h4>
           <div class="tags mt-4">
-            <span>Salesforce</span><span>Apex</span><span>LWC</span><span>Einstein Bot</span>
-            <span>Node.js</span><span>Java</span><span>CI/CD</span>
+            <span>Salesforce</span>
+            <span>Einstein Bot</span>
+            <span>CI/CD</span>
+            <span class="tag">Desenvolvimento: Node js</span>
+            <span class="tag">Java</span>
+            <span class="tag">APEX</span>
+            <span class="tag">LWC</span>
+            <span class="tag">Salesforce - Sales</span>
+            <span class="tag">Salesforce - Service Console</span>
+            <span class="tag">Salesforce - digital engagement</span>
+            <span class="tag">Arquitetura do CRM</span>
+            <span class="tag">treinamento da equipe</span>
+            <span class="tag">Liderança</span>
+            <span class="tag">Base de conhecimento, IA</span>
+            <span class="tag">Einstein Bot</span>
           </div>
         `,
 
@@ -180,16 +190,13 @@ const translations = {
 
           <h4>Atividades</h4>
           <ul class="xp-lista">
-            <li>Desenvolvimento completo de sistema de mega-sena</li>
-            <li>Modelagem de dados eficiente</li>
-            <li>Experiência do usuário e código limpo</li>
-            <li>Funcionalidades completas implementadas</li>
+            <li>Como desenvolvedor Full-Stack, trabalhei em projetos como freelancer, desenvolvendo um sistema de mega-sena nas linguagens PHP, JavaScript, HTML e CSS. Apliquei modelagem de dados, focando na usabilidade para os usuários e na escrita de código limpo</li>
           </ul>
 
           <h4>Tecnologias</h4>
           <div class="tags mt-4">
             <span>PHP</span><span>JavaScript</span><span>HTML</span>
-            <span>CSS</span><span>MySQL</span>
+            <span>CSS</span><span>MySQL</span><span>Git</span>
           </div>
         `,
 
@@ -203,20 +210,22 @@ const translations = {
 
           <h4>Atividades</h4>
           <ul class="xp-lista">
-            <li>APIs RESTful com Spring Boot e Quarkus</li>
-            <li>Microsserviços escaláveis</li>
-            <li>MongoDB e MySQL</li>
-            <li>Swagger para documentação</li>
-            <li>Testes automatizados com JUnit</li>
-            <li>Docker para containerização</li>
-            <li>Scrum e Gitflow</li>
+            <li>Minhas atividades envolveram o desenvolvimento de APIs e microsserviços utilizando Java e os frameworks Spring Boot e Quarkus, aplicando boas práticas de lógica de programação e arquitetura de software. Atuei significativamente na implementação de integrações, desenvolvendo soluções para comunicação eficiente entre sistemas internos e externos, com foco em escalabilidade e performance.</li>
+            <li>Trabalhei tanto com MongoDB quanto com MySQL, projetando consultas eficientes e realizando modelagem de dados para atender diferentes necessidades de negócio. Utilizei controle de versão com Git (GitLab/GitHub) e o fluxo Gitflow, garantindo organização e eficiência no desenvolvimento. Também atuei com ferramentas como Swagger para documentação de APIs RESTful e Docker para criação e gerenciamento de containers, otimizando o ciclo de desenvolvimento e implantação.</li>
+            <li>Atuei em um ambiente ágil, com metodologias como Scrum, participando ativamente de sprints, planejamento e retrospectivas. Implementei testes automatizados com JUnit, assegurando a qualidade e confiabilidade das soluções desenvolvidas.entre outras ferramentas</li>
           </ul>
 
           <h4>Tecnologias</h4>
           <div class="tags mt-4">
-            <span>Java</span><span>Node.js</span><span>Spring Boot</span>
-            <span>Quarkus</span><span>MongoDB</span><span>MySQL</span>
-            <span>Docker</span><span>JUnit</span>
+            <span>Java</span>
+            <span>Node.js</span>
+            <span>Spring Boot</span>
+            <span>Quarkus</span>
+            <span>MongoDB</span>
+            <span>MySQL</span>
+            <span>Docker</span>
+            <span>JUnit</span>
+            <span>Git</span>
           </div>
         `,
 
@@ -228,11 +237,7 @@ const translations = {
 
           <h4>Atividades</h4>
           <ul class="xp-lista">
-            <li>Distribuição de leads</li>
-            <li>Designer gráfico e mídia</li>
-            <li>Gestão de redes sociais</li>
-            <li>Conteúdos interativos</li>
-            <li>Engajamento e métricas</li>
+            <li>Atuando em múltiplas frentes, trabalhei como Analista de Distribuição de Leads, otimizando a captação e segmentação. Como Designer Gráfico e de Mídia, criei visuais impactantes para campanhas. Também gerenciei as redes sociais como Social Media, desenvolvendo conteúdos interativos e analisando métricas para maximizar o engajamento.</li>
           </ul>
 
           <h4>Ferramentas</h4>
@@ -409,68 +414,82 @@ const translations = {
     dynamic: {
       tituloAnimado: ["Salesforce Developer", "Full Stack Developer"],
 
-      detalhes: {
-        datum: `
-          <span class="badge-nivel">Senior</span>
-          <h3>Senior Salesforce Developer</h3>
-          <p class="empresa">Datum • Consulting</p>
-          <p class="xp-data-grande">May 2025 - Present</p>
+        detalhes: {
+          datum: `
+            <span class="badge-nivel">Senior</span>
+            <h3>Senior Salesforce Developer</h3>
+            <p class="empresa">Datum • Consulting</p>
+            <p class="xp-data-grande">May 2025 - Present</p>
 
-          <p class="promocao">🎉 Promoted to Senior after 5 months</p>
+            <p class="promocao">🎉 Promoted to Senior after 5 months</p>
 
-          <h4>Main Achievements</h4>
-          <ul class="xp-lista">
-            <li>Construction of Einstein Bots</li>
-            <li>Development in Apex, LWC, flows</li>
-            <li>Integrations with external tools</li>
-            <li>CI/CD for versioning and deployment</li>
-            <li>Jenkins deployment pipeline</li>
-            <li>Sales Cloud</li>
-            <li>Service Cloud</li>
-            <li>Work with Technical Solution in Marketing Cloud</li>
-            <li>Digital Engagement</li>
-            <li>Native Configurations</li>
-            <li>Experience in service channel</li>
-          </ul>
+            <h4>Main Achievements</h4>
+            <ul class="xp-lista">
+              <li>I work as a Senior Salesforce Developer in a banking sector squad, delivering solutions aligned with business needs and the performance and compliance requirements of the financial environment. I design and develop solutions using Salesforce Core, Digital Engagement, Service Cloud, as well as solution designs involving Marketing Cloud and Data Cloud.</li>
+              <li>I contribute to the improvement of customer service journeys by developing and enhancing Einstein Bots and implementing integrations between Salesforce and external backend systems. My responsibilities include development with Apex, Flows, LWC, native platform configurations, report creation, permission management, and data organization, ensuring scalable, efficient solutions that follow Salesforce best practices.</li>
+            </ul>
 
-          <h4>Technologies Used</h4>
-          <div class="tags mt-4">
-            <span>Salesforce</span>
-            <span>Apex</span>
-            <span>LWC</span>
-            <span>Einstein Bot</span>
-            <span>CI/CD</span>
-            <span>Jenkins</span>
-          </div>
-        `,
+            <h4>Technologies Used</h4>
+            <div class="tags mt-4">
+              <span>Salesforce</span>
+              <span>Apex</span>
+              <span>LWC</span>
+              <span>Einstein Bot</span>
+              <span>CI/CD</span>
+              <span>Jenkins</span>
+              <span class="tag">Salesforce - Sales</span>
+              <span class="tag">Salesforce - Service Console</span>
+              <span class="tag">Salesforce - Data Cloud</span>
+              <span class="tag">Salesforce - Marketing Cloud</span>
+              <span class="tag">Salesforce - Digital Engagement</span>
+            </div>
+          `,
+          dukotech: `
+            <span class="badge-nivel">Mid-Level</span>
+            <h3>Salesforce Developer - Technical Reference</h3>
+            <p class="empresa">Duko Tecnologia • Consulting</p>
+            <p class="xp-data-grande">September 2023 - May 2025</p>
 
-        dukotech: `
-          <span class="badge-nivel">Pleno</span>
-          <h3>Salesforce Developer - Technical Reference</h3>
-          <p class="empresa">Duko Tecnologia • Consulting</p>
-          <p class="xp-data-grande">September 2023 - May 2025</p>
+            <p class="promocao">🎉 Promoted to Mid-Level after 6 months</p>
 
-          <p class="promocao">🎉 Promoted to Mid-level after 6 months</p>
+            <h4>Activities</h4>
+            <ul class="xp-lista">
+              <li>I began my Salesforce journey working as a Junior Developer in the Sales Cloud, following development best practices and building both Out-Of-The-Box (OOTB) and custom features. I built various CRM solutions including objects, validation rules, reports, permissions, profiles, roles, sharing rules, configurations and other functionalities, building a strong foundation in the platform.</li>
 
-          <h4>Activities</h4>
-          <ul class="xp-lista">
-            <li>Delivery of more than 40 Projects</li>
-            <li>Development in Apex, LWC and advanced configurations</li>
-            <li>Integrations with external tools</li>
-            <li>CI/CD for versioning and deployment</li>
-            <li>Trainings on best practices in Einstein Bot</li>
-            <li>Work in Sales Cloud, Service Cloud, Maps and Cadence</li>
-            <li>Experience in various sectors</li>
-            <li>Salesforce Architecture</li>
-            <li>Trainings for developers</li>
-          </ul>
+              <li>After the first month, I started receiving Apex, LWC and Service Cloud demands, along with building chatbots such as Einstein Bot for one of the company’s largest clients. From that point, I became responsible for building bots for several other clients, improving flows according to business needs. After six months, I was promoted to Mid-Level Developer.</li>
 
-          <h4>Technologies Used</h4>
-          <div class="tags mt-4">
-            <span>Salesforce</span><span>Apex</span><span>LWC</span><span>Einstein Bot</span>
-            <span>Node.js</span><span>Java</span><span>CI/CD</span>
-          </div>
-        `,
+              <li>Throughout this journey, I built more than 30 bots and trained other developers on best practices for Einstein Bot development. In parallel, I worked on Apex and Lightning Web Components (LWC), developing custom interfaces focused on improving usability for CRM agents in both Sales and Service Cloud.</li>
+
+              <li>I also worked on integrating external tools with Salesforce.</li>
+
+              <li>I used CI/CD practices for versioning and deploying code, ensuring organized and secure development environments, as well as clean and efficient production deployments.</li>
+
+              <li>My experience spans more than 40 projects, all involving Einstein Bots and solutions for Sales Cloud and Service Cloud. I also worked with other products like Salesforce Maps and Cadence, and across e-commerce, healthcare, banking and mining sectors, giving me a broad understanding of diverse business rules.</li>
+
+              <li>Besides development and configuration, I also worked on CRM architecture and development standardization, transforming business rules into Salesforce solutions. I attended meetings directly with clients of different profiles when needed. I handled project go-lives and support, ensuring quality in all applications. Whenever a new product or feature appeared, development tasks were assigned to me, which helped me learn new functionalities quickly.</li>
+
+              <li>After about a year, I became the technical reference in the consulting company.</li>
+            </ul>
+
+            <h4>Technologies Used</h4>
+            <div class="tags mt-4">
+              <span>Salesforce</span>
+              <span>Einstein Bot</span>
+              <span>CI/CD</span>
+              <span class="tag">Development: Node.js</span>
+              <span class="tag">Java</span>
+              <span class="tag">Apex</span>
+              <span class="tag">LWC</span>
+              <span class="tag">Salesforce - Sales</span>
+              <span class="tag">Salesforce - Service Console</span>
+              <span class="tag">Salesforce - Digital Engagement</span>
+              <span class="tag">CRM Architecture</span>
+              <span class="tag">Team Training</span>
+              <span class="tag">Leadership</span>
+              <span class="tag">Knowledge Base, AI</span>
+              <span class="tag">Einstein Bot</span>
+            </div>
+          `,
 
         consulcl: `
           <h3>Full Stack Developer</h3>
@@ -497,7 +516,7 @@ const translations = {
 
         gerador: `
           <h3>Back-End Developer</h3>
-          <span class="badge-nivel">Mid-level</span>
+          <span class="badge-nivel">Mid-Level</span>
           <p class="empresa">Gerador de Devs • Consulting</p>
           <p class="xp-data-grande">June 2022 - August 2023</p>
 
@@ -505,36 +524,37 @@ const translations = {
 
           <h4>Activities</h4>
           <ul class="xp-lista">
-            <li>RESTful APIs with Spring Boot and Quarkus</li>
-            <li>Scalable microservices</li>
-            <li>MongoDB and MySQL</li>
-            <li>Swagger for documentation</li>
-            <li>Automated tests with JUnit</li>
-            <li>Docker for containerization</li>
-            <li>Scrum and Gitflow</li>
+            <li>My activities involved developing APIs and microservices using Java and the Spring Boot and Quarkus frameworks, applying best practices in programming logic and software architecture. I worked significantly on integrations, developing solutions for efficient communication between internal and external systems with focus on scalability and performance.</li>
+
+            <li>I worked with both MongoDB and MySQL, designing efficient queries and performing data modeling. I used Git (GitLab/GitHub) for version control and Gitflow, ensuring organized development. I also used tools such as Swagger for documenting RESTful APIs and Docker for container management, optimizing development and deployment cycles.</li>
+
+            <li>I worked within an Agile environment with Scrum, participating actively in sprints, planning and retrospectives. I implemented automated testing with JUnit to ensure quality and reliability. Among other tools.</li>
           </ul>
 
           <h4>Technologies</h4>
           <div class="tags mt-4">
-            <span>Java</span><span>Node.js</span><span>Spring Boot</span>
-            <span>Quarkus</span><span>MongoDB</span><span>MySQL</span>
-            <span>Docker</span><span>JUnit</span>
+            <span>Java</span>
+            <span>Node.js</span>
+            <span>Spring Boot</span>
+            <span>Quarkus</span>
+            <span>MongoDB</span>
+            <span>MySQL</span>
+            <span>Docker</span>
+            <span>JUnit</span>
+            <span>Git</span>
           </div>
         `,
 
+
         garten: `
           <h3>Digital Designer</h3>
-          <span class="badge-nivel">Mid-level</span>
+          <span class="badge-nivel">Mid-Level</span>
           <p class="empresa">Garten Seminovos</p>
           <p class="xp-data-grande">January 2022 - June 2022</p>
 
           <h4>Activities</h4>
           <ul class="xp-lista">
-            <li>Lead distribution</li>
-            <li>Graphic design and media</li>
-            <li>Social media management</li>
-            <li>Interactive content</li>
-            <li>Engagement and metrics</li>
+            <li>Working in multiple areas, I acted as Lead Distribution Analyst, optimizing lead capture and segmentation. As a Graphic and Media Designer, I created impactful visuals for campaigns. I also managed social media as a Social Media specialist, developing interactive content and analyzing metrics to maximize engagement.</li>
           </ul>
 
           <h4>Tools</h4>
