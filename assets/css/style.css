@@ -9,6 +9,7 @@
   --bg-navbar-brand-span: #6f42c1;
   --bg-hero-circle: rgba(124, 90, 255, 0.4);
   --bg-sobre: #18212f;
+  --bg-sobre-rgb: 24, 33, 47;
   --bg-sobre-card: #151c2b;
   --bg-sobre-card-hover: rgba(27, 36, 54, 1);
   --bg-stat-box: #151c2b;
@@ -108,23 +109,6 @@ body {
 .navbar {
   background: var(--bg-navbar) !important;
   padding: 20px 0;
-}
-
-.navbar-brand {
-  font-weight: 600;
-  color: var(--text-navbar-brand) !important;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.navbar-brand span {
-  background: var(--bg-navbar-brand-span);
-  border-radius: var(--border-radius-small);
-  padding: 4px 8px;
-  color: var(--text-default);
-  font-weight: 700;
-  font-size: 0.9rem;
 }
 
 .nav-link {
@@ -301,11 +285,25 @@ body {
    SOBRE (ABOUT)
    ========================= */
 #sobre {
-  background: rgba(var(--bg-sobre-rgb), 0.6); /* fundo transparente */
+  background: rgba(var(--bg-sobre-rgb), 0.4); /* fundo transparente */
   padding: 100px 0;
   margin-top: 120px;
   position: relative;
   z-index: 1;
+}
+
+.curriculo {
+  color: var(--text-default);
+  border: 1px solid var(--text-hero-location);
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease; /* animação suave */
+}
+
+/* Efeito ao passar o mouse */
+.curriculo:hover {
+  background-color: var(  --bg-sobre-card-hover);
+  transform: scale(1.05); 
 }
 
 
@@ -902,10 +900,11 @@ footer ul li {
 }
 
 .projetos {
-  background-color: var(--bg-sobre);
+  background: rgba(var(--bg-sobre-rgb), 0.4); /* fundo transparente */
   padding: 100px 0;
   margin-top: 120px;
-  z-index: -11;
+  position: relative;
+  z-index: 1;
 }
 
 /* =========================

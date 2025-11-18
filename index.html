@@ -9,38 +9,41 @@
   <!-- BOOTSTRAP -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css">
+
 
   <!-- CSS -->
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <link rel="icon" type="image/x-icon" href="assets/img/icon.png">
 </head>
 
 <body>
-
   <div id="particles-js"></div>
+  <div id="confetti-container"></div>
 
+  <div id="welcome-message">
+    <h1>🎉 Seja bem-vindo! 🎉</h1>
+  </div>
   <!-- ========================================================= -->
   <!-- NAVBAR -->
   <!-- ========================================================= -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
 
-      <a class="navbar-brand" href="#">
-        <span>MF</span>
-        <p>Mateus Ferian</p>
-      </a>
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <div class="collapse navbar-collapse justify-content-start" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-          <li class="nav-item"><a class="nav-link" href="#experiencia">Experiência</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#habilidades-tecnicas">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre" data-i18n="nav_sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiencia" data-i18n="nav_experiencia">Experiência</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projetos" data-i18n="nav_projetos">Projetos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#habilidades-tecnicas" data-i18n="nav_skills">Skills</a></li>
         </ul>
+      </div>
+
+      <!-- Botões de idioma -->
+      <div class="idiomas d-flex align-items-center">
+        <button class="btn-lang" data-lang="pt"><span class="fi fi-br"></span> PT</button>
+        <button class="btn-lang" data-lang="en"><span class="fi fi-us"></span> EN</button>
       </div>
 
     </div>
@@ -54,14 +57,14 @@
       <h1>MF</h1>
     </div>
 
-    <h2>Mateus Ferian</h2>
-    <p class="location">📍 São Paulo, Brasil</p>
+    <h2 data-i18n="hero_nome">Mateus Ferian</h2>
+    <p class="location" data-i18n="hero_local">📍 São Paulo, Brasil</p>
 
     <h3 class="hero-title">
       <span id="titulo-animado">Desenvolvedor Salesforce</span>
     </h3>
 
-    <p class="description">
+    <p class="description" data-i18n="hero_descricao">
       Especialista em Salesforce com mais de <strong class="sobre-cargo-1">40 projetos</strong> realizados,
       desenvolvedor Full-Stack apaixonado por criar soluções inovadoras e de alta qualidade.
       Experiência em <strong class="sobre-cargo-1">Salesforce</strong>, <strong class="sobre-cargo-1">Back-End</strong>
@@ -71,21 +74,22 @@
 
     <div class="social-icons">
       <div class="social-buttons">
-        <a href="https://wa.me/5519998278991" target="_blank" class="social-btn whatsapp">
+        <a href="https://wa.me/5519998278991" target="_blank" class="social-btn whatsapp" aria-label="WhatsApp">
           <i class="bi bi-whatsapp"></i>
         </a>
 
-        <a href="mailto:mateusferian10@gmail.com" class="social-btn email">
+        <a href="mailto:mateusferian10@gmail.com" class="social-btn email" aria-label="Email">
           <i class="bi bi-envelope"></i>
         </a>
 
-        <a href="https://www.linkedin.com/in/mateus-ferian/" target="_blank" class="social-btn linkedin">
+        <a href="https://www.linkedin.com/in/mateus-ferian/" target="_blank" class="social-btn linkedin"
+          aria-label="LinkedIn">
           <i class="bi bi-linkedin"></i>
         </a>
       </div>
     </div>
 
-    <a href="#sobre" class="btn btn-gradient">Explore Meu Trabalho</a>
+    <a href="#sobre" class="btn btn-gradient" data-i18n="btn_explore">Explore Meu Trabalho</a>
 
   </section>
 
@@ -95,7 +99,7 @@
   <section id="sobre" class="mt-5 secao">
     <div class="container" data-aos="zoom-in">
 
-      <h2 class="titulo-h2">Sobre Mim</h2>
+      <h2 class="titulo-h2" data-i18n="sobre_titulo">Sobre Mim</h2>
 
       <div class="row g-4 justify-content-center">
 
@@ -108,7 +112,7 @@
               </video>
             </div>
           </div>
-          <div class="sobre-card mt-3">
+          <div class="sobre-card mt-3" data-i18n="sobre_card">
             <h5><strong class="titulo">Perfil Pessoal</strong></h5>
             <p>
               Olá, tudo bem? Meu nome é
@@ -129,38 +133,42 @@
         </div>
 
         <div class="col-md-5">
-          <div class="sobre-stats d-flex flex-column gap-3">
+          <div class="sobre-stats d-flex flex-column gap-1">
+            <a href="assets/Arquivos/Curriculo Mateus Ferian.pdf" target="_blank" class="btn curriculo"
+              data-aos="flip-left" data-i18n="btn_curriculo">
+              🔎 Visualizar Currículo
+            </a>
 
             <div class="stat-box" data-aos="flip-left">
               <i class="bi bi-award text-primary"></i>
               <h4><strong class="titulo">40+</strong></h4>
-              <p>Projetos Concluídos</p>
+              <p data-i18n="stat_projetos">Projetos Concluídos</p>
             </div>
 
             <div class="stat-box" data-aos="flip-left">
               <i class="bi bi-robot text-info"></i>
               <h4><strong class="titulo">30+</strong></h4>
-              <p>Bots de atendimento Criados</p>
+              <p data-i18n="stat_bots">Bots de atendimento Criados</p>
             </div>
 
             <div class="stat-box" data-aos="flip-left">
               <i class="bi bi-calendar3 text-success"></i>
               <h4><strong class="titulo">03+</strong></h4>
-              <p>Anos de Experiência</p>
+              <p data-i18n="stat_anos">Anos de Experiência</p>
             </div>
 
             <div class="stat-box" data-aos="flip-left">
               <i class="bi bi-lightning-charge text-warning"></i>
               <h4><strong class="titulo">10+</strong></h4>
-              <p>Setores Atendidos</p>
+              <p data-i18n="stat_setores">Setores Atendidos</p>
             </div>
           </div>
         </div>
       </div>
 
       <div class="filosofia stat-box mt-5" data-aos="fade-up">
-        <h5><strong>Filosofia de Trabalho</strong></h5>
-        <p>
+        <h5><strong data-i18n="filosofia_titulo">Filosofia de Trabalho</strong></h5>
+        <p data-i18n="filosofia_text">
           “Além do desenvolvimento e configurações, também atuo na elaboração de
           <span class="filosofia-1">arquiteturas para o CRM</span> e
           <span class="filosofia-2">padronização de desenvolvimentos</span>,
@@ -175,40 +183,40 @@
   <!-- ========================================================= -->
   <section id="experiencia" class="experiencia-section container mt-5" data-aos="fade-left">
 
-    <h2 class="titulo-h2">Experiência Profissional</h2>
+    <h2 class="titulo-h2" data-i18n="experiencia_titulo">Experiência Profissional</h2>
 
     <div class="experiencia-container">
 
       <aside class="experiencia-lista">
 
         <div class="xp-item ativo" data-xp="datum" data-aos="fade-up">
-          <h3>Desenvolvedor Salesforce Senior</h3>
-          <p>Datum</p>
-          <span class="xp-data">Maio de 2025 - Atual</span>
+          <h3 data-i18n="xp_datum_title">Desenvolvedor Salesforce Senior</h3>
+          <p data-i18n="xp_datum_company">Datum</p>
+          <span class="xp-data" data-i18n="xp_datum_dates">Maio de 2025 - Atual</span>
         </div>
 
         <div class="xp-item" data-xp="dukotech" data-aos="fade-up">
-          <h3>Desenvolvedor Salesforce - Referencia Tecnica</h3>
-          <p>Duko Tecnologia</p>
-          <span class="xp-data">Setembro 2023 - Maio de 2025</span>
+          <h3 data-i18n="xp_dukotech_title">Desenvolvedor Salesforce - Referencia Tecnica</h3>
+          <p data-i18n="xp_dukotech_company">Duko Tecnologia</p>
+          <span class="xp-data" data-i18n="xp_dukotech_dates">Setembro 2023 - Maio de 2025</span>
         </div>
 
         <div class="xp-item" data-xp="consulcl" data-aos="fade-up">
-          <h3>Desenvolvedor Full Stack</h3>
-          <p>Consulter – Consultoria</p>
-          <span class="xp-data">Abril 2024 - Maio 2024</span>
+          <h3 data-i18n="xp_consulcl_title">Desenvolvedor Full Stack</h3>
+          <p data-i18n="xp_consulcl_company">Consulter – Consultoria</p>
+          <span class="xp-data" data-i18n="xp_consulcl_dates">Abril 2024 - Maio 2024</span>
         </div>
 
         <div class="xp-item" data-xp="gerador" data-aos="fade-up">
-          <h3>Desenvolvedor Back-End</h3>
-          <p>Gerador de Devs</p>
-          <span class="xp-data">Junho 2022 - Agosto 2023</span>
+          <h3 data-i18n="xp_gerador_title">Desenvolvedor Back-End</h3>
+          <p data-i18n="xp_gerador_company">Gerador de Devs</p>
+          <span class="xp-data" data-i18n="xp_gerador_dates">Junho 2022 - Agosto 2023</span>
         </div>
 
         <div class="xp-item" data-xp="garten" data-aos="fade-up">
-          <h3>Designer Digital</h3>
-          <p>Garten Seminovos</p>
-          <span class="xp-data">Janeiro 2022 - Junho 2022</span>
+          <h3 data-i18n="xp_garten_title">Designer Digital</h3>
+          <p data-i18n="xp_garten_company">Garten Seminovos</p>
+          <span class="xp-data" data-i18n="xp_garten_dates">Janeiro 2022 - Junho 2022</span>
         </div>
 
       </aside>
@@ -220,7 +228,7 @@
 
   <section class="secao projetos" id="projetos">
     <div class="container mt-5">
-      <h2 class="titulo-h2">Projetos trabalhados</h2>
+      <h2 class="titulo-h2" data-i18n="projetos_titulo">Projetos trabalhados</h2>
       <div class="row g-2 justify-content-center" id="projetos-container">
       </div>
     </div>
@@ -229,25 +237,25 @@
 
   <section id="habilidades-tecnicas" class="secao mt-5 container" data-aos="fade-up">
     <div class="container">
-      <h2 class="titulo-h2">Habilidades Técnicas</h2>
-      <p class="subtitulo">
+      <h2 class="titulo-h2" data-i18n="habilidades_titulo">Habilidades Técnicas</h2>
+      <p class="subtitulo" data-i18n="habilidades_subtitulo">
         Domínio em tecnologias modernas com foco em qualidade, performance e boas práticas de desenvolvimento.
       </p>
 
       <div class="filtros d-flex flex-wrap justify-content-center mb-4 gap-3">
-        <button class="btn filtro-btn ativo btn-salesforce" data-categoria="salesforce">
+        <button class="btn filtro-btn ativo btn-salesforce" data-categoria="salesforce" data-i18n="filtro_salesforce">
           <i class="bi bi-bar-chart-fill me-2"></i> Salesforce
         </button>
-        <button class="btn filtro-btn btn-backend" data-categoria="backend">
+        <button class="btn filtro-btn btn-backend" data-categoria="backend" data-i18n="filtro_backend">
           <i class="bi bi-gear-fill me-2"></i> Back-End
         </button>
-        <button class="btn filtro-btn btn-frontend" data-categoria="frontend">
+        <button class="btn filtro-btn btn-frontend" data-categoria="frontend" data-i18n="filtro_frontend">
           <i class="bi bi-palette-fill me-2"></i> Front-End
         </button>
-        <button class="btn filtro-btn btn-banco" data-categoria="banco">
+        <button class="btn filtro-btn btn-banco" data-categoria="banco" data-i18n="filtro_banco">
           <i class="bi bi-database-fill me-2"></i> Banco de Dados
         </button>
-        <button class="btn filtro-btn btn-devops" data-categoria="devops">
+        <button class="btn filtro-btn btn-devops" data-categoria="devops" data-i18n="filtro_devops">
           <i class="bi bi-rocket-takeoff-fill me-2"></i> DevOps & Metodologias
         </button>
       </div>
@@ -258,22 +266,22 @@
 
         <div class="stat-box2 text-center p-4" data-aos="flip-*">
           <i class="bi bi-award-fill text-warning fs-2 mb-2"></i>
-          <p class="mb-1">Certificações</p>
-          <h5 class="mb-0 tema">Em Progresso</h5>
+          <p class="mb-1" data-i18n="certificacoes">Certificações</p>
+          <h5 class="mb-0 tema" data-i18n="certificacoes_valor">Em Progresso</h5>
         </div>
 
         <div class="stat-box2 text-center p-4" data-aos="flip-*">
           <i class="bi bi-robot text-info fs-2 mb-2"></i>
-          <p class="mb-1">Especialização</p>
-          <h5 class="mb-0 tema">☁️ Projetos Salesforce</h5>
-          <small>Mais de 40 Projetos desenvolvidos</small>
+          <p class="mb-1" data-i18n="especializacao">Especialização</p>
+          <h5 class="mb-0 tema" data-i18n="especializacao_valor">☁️ Projetos Salesforce</h5>
+          <small data-i18n="especializacao_small">Mais de 40 Projetos desenvolvidos</small>
         </div>
 
         <div class="stat-box2 text-center p-4" data-aos="flip-*">
           <i class="bi bi-lightning-charge-fill text-danger fs-2 mb-2"></i>
-          <p class="mb-1">Metodologias</p>
-          <h5 class="mb-0">Ágil</h5>
-          <small>Scrum, Kanban, XP</small>
+          <p class="mb-1" data-i18n="metodologias">Metodologias</p>
+          <h5 class="mb-0" data-i18n="metodologias_valor">Ágil</h5>
+          <small data-i18n="metodologias_small">Scrum, Kanban, XP</small>
         </div>
       </div>
     </div>
@@ -283,8 +291,8 @@
     <div class="container">
 
       <div class="text-center pt-3 mt-3 creditos ">
-        <p class="mb-1"> 2025 - Mateus Ferian</p>
-        <small>Tudo é construido com esforço e determinação</small>
+        <p class="mb-1" data-i18n="footer_ano"> 2025 - Mateus Ferian</p>
+        <small data-i18n="footer_text">Tudo é construido com esforço e determinação</small>
       </div>
     </div>
   </footer>
