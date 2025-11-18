@@ -752,7 +752,7 @@ function setupXpSystem() {
   if (!xpContainer) return;
 
   // inicializar com dukotech (mesma escolha original)
-  xpContainer.innerHTML = dynamicData.detalhes.dukotech || "";
+  xpContainer.innerHTML = dynamicData.detalhes.datum || "";
   xpContainer.classList.add("show");
   animarLinhas();
 
