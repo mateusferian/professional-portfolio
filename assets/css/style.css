@@ -110,6 +110,7 @@ body {
 /* =========================
    NAVBAR
    ========================= */
+/* ===== Navbar padrão (Desktop ≥992px) ===== */
 .navbar {
   background: var(--bg-navbar) !important;
   padding: 20px 0;
@@ -124,6 +125,67 @@ body {
 .nav-link:hover {
   color: var(--text-navbar-link-hover) !important;
 }
+
+/* Botões de idioma */
+.idiomas .btn-lang {
+  background: transparent;
+  border: 1px solid var(--rgba-1);
+  color: var(--text-default);
+  margin-left: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  padding: .25rem .6rem;
+  font-size: .85rem;
+  border-radius: 6px;
+}
+
+.idiomas .btn-lang.active {
+  background: var(--rgba-2);
+}
+
+/* ===== Tablet (768px ≤ width < 992px) ===== */
+@media (max-width: 991px) and (min-width: 768px) {
+  .nav-link {
+    margin-left: 12px;
+    font-size: 0.95rem;
+  }
+
+  .idiomas .btn-lang {
+    padding: 0.2rem 0.5rem;
+    margin-left: 4px;
+    font-size: 0.8rem;
+  }
+}
+
+/* ===== Mobile (<768px) ===== */
+@media (max-width: 767px) {
+  .navbar {
+    padding: 12px 0;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-link {
+    margin: 6px 0; /* itens empilhados */
+    font-size: 0.9rem;
+  }
+
+  .idiomas {
+    margin-top: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .idiomas .btn-lang {
+    padding: 0.25rem 0.4rem;
+    margin: 4px 3px;
+    font-size: 0.8rem;
+  }
+}
+
 
 /* =========================
    HERO

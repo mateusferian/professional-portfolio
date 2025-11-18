@@ -24,26 +24,33 @@
   <!-- ========================================================= -->
   <!-- NAVBAR -->
   <!-- ========================================================= -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <div class="container">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
 
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="#sobre" data-i18n="nav_sobre">Sobre</a></li>
-          <li class="nav-item"><a class="nav-link" href="#experiencia" data-i18n="nav_experiencia">Experiência</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projetos" data-i18n="nav_projetos">Projetos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#habilidades-tecnicas" data-i18n="nav_skills">Skills</a></li>
-        </ul>
+    <!-- Botão Toggle para mobile/tablet -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu + botões de idioma juntos no collapse -->
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#sobre" data-i18n="nav_sobre">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experiencia" data-i18n="nav_experiencia">Experiência</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projetos" data-i18n="nav_projetos">Projetos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#habilidades-tecnicas" data-i18n="nav_skills">Skills</a></li>
+      </ul>
+
+      <div class="idiomas d-flex align-items-center ms-3">
+        <button class="btn-lang" data-lang="pt">PT</button>
+        <button class="btn-lang" data-lang="en">EN</button>
       </div>
-
-      <!-- Botões de idioma -->
-      <div class="idiomas d-flex align-items-center">
-        <button class="btn-lang" data-lang="pt"><span class="fi fi-br"></span> PT</button>
-        <button class="btn-lang" data-lang="en"><span class="fi fi-us"></span> EN</button>
-      </div>
-
     </div>
-  </nav>
+
+  </div>
+</nav>
+
 
   <!-- ========================================================= -->
   <!-- HERO -->
@@ -78,7 +85,8 @@
           <i class="bi bi-envelope"></i>
         </a>
 
-        <a href="https://www.linkedin.com/in/mateus-ferian/" target="_blank" class="social-btn linkedin" aria-label="LinkedIn">
+        <a href="https://www.linkedin.com/in/mateus-ferian/" target="_blank" class="social-btn linkedin"
+          aria-label="LinkedIn">
           <i class="bi bi-linkedin"></i>
         </a>
       </div>
@@ -129,7 +137,8 @@
 
         <div class="col-md-5">
           <div class="sobre-stats d-flex flex-column gap-1">
-            <a href="assets/Arquivos/Curriculo Mateus Ferian.pdf" target="_blank" class="btn curriculo" data-aos="flip-left" data-i18n="btn_curriculo">
+            <a href="assets/Arquivos/Curriculo Mateus Ferian.pdf" target="_blank" class="btn curriculo"
+              data-aos="flip-left" data-i18n="btn_curriculo">
               🔎 Visualizar Currículo
             </a>
 
