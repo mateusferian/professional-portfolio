@@ -213,9 +213,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 0 25px var(--bg-xp-ativo);
   overflow: hidden;
 }
-
 
 .hero .circle img {
   width: 100%;
