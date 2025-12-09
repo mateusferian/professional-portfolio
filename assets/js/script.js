@@ -178,7 +178,7 @@ const translations = {
         `,
 
         consulcl: `
-          <h3>Desenvolvedor Full Stack</h3>
+          <h3>Desenvolvedor Full Stack - Freelancer</h3>
           <p class="empresa">Consulcl • Consultoria</p>
           <p class="xp-data-grande">Abril 2024 - Maio 2024</p>
 
@@ -197,7 +197,7 @@ const translations = {
         `,
 
         gerador: `
-          <h3>Desenvolvedor Back-End</h3>
+          <h3>Desenvolvedor Back-End - Pleno</h3>
           <p class="empresa">Gerador de Devs • Consultoria</p>
           <p class="xp-data-grande">Junho 2022 - Agosto 2023</p>
 
@@ -225,7 +225,7 @@ const translations = {
         `,
 
         garten: `
-          <h3>Designer Digital</h3>
+          <h3>Designer Digital - Pleno</h3>
           <p class="empresa">Garten Seminovos</p>
           <p class="xp-data-grande">Janeiro 2022 - Junho 2022</p>
 
@@ -412,9 +412,6 @@ const translations = {
             <h3>Senior Salesforce Developer</h3>
             <p class="empresa">Datum • Consulting</p>
             <p class="xp-data-grande">May 2025 - Present</p>
-
-            <p class="promocao">🎉 Promoted to Senior after 5 months</p>
-
             <h4>Main Achievements</h4>
             <ul class="xp-lista">
               <li>I work as a Senior Salesforce Developer in a banking sector squad, delivering solutions aligned with business needs and the performance and compliance requirements of the financial environment. I design and develop solutions using Salesforce Core, Digital Engagement, Service Cloud, as well as solution designs involving Marketing Cloud and Data Cloud.</li>
@@ -483,7 +480,7 @@ const translations = {
           `,
 
         consulcl: `
-          <h3>Full Stack Developer</h3>
+          <h3>Full Stack Developer - Freelancer</h3>
           <p class="empresa">Consulcl • Consulting</p>
           <p class="xp-data-grande">April 2024 - May 2024</p>
 
@@ -505,7 +502,7 @@ const translations = {
         `,
 
         gerador: `
-          <h3>Back-End Developer</h3>
+          <h3>Back-End Developer - Mid-level</h3>
           <p class="empresa">Gerador de Devs • Consulting</p>
           <p class="xp-data-grande">June 2022 - August 2023</p>
 
@@ -536,7 +533,7 @@ const translations = {
 
 
         garten: `
-          <h3>Digital Designer</h3>
+          <h3>Digital Designer - Mid-level</h3>
           <p class="empresa">Garten Seminovos</p>
           <p class="xp-data-grande">January 2022 - June 2022</p>
 
