@@ -21,8 +21,7 @@ const translations = {
       hero_descricao: `Especialista em Salesforce com mais de <strong class="sobre-cargo-1">40 projetos</strong> realizados,
         desenvolvedor Full-Stack apaixonado por criar soluções inovadoras e de alta qualidade.
         Experiência em <strong class="sobre-cargo-1">Salesforce</strong>, <strong class="sobre-cargo-1">Back-End</strong>
-        <strong class="sobre-cargo-3">Front-End</strong>, <strong class="sobre-cargo-2"> Banco de Dados</strong> e
-        arquiteturas robustas.`,
+        <strong class="sobre-cargo-3">Front-End</strong>, <strong class="sobre-cargo-2"> Banco de Dados</strong>.`,
       btn_explore: "Explore Meu Trabalho",
 
       sobre_titulo: "Sobre Mim",
@@ -330,8 +329,7 @@ const translations = {
       hero_descricao: `Specialist in Salesforce with more than <strong class="sobre-cargo-1">40 projects</strong> completed,
         Full-Stack developer passionate about creating innovative and high-quality solutions.
         Experience in <strong class="sobre-cargo-1">Salesforce</strong>, <strong class="sobre-cargo-1">Back-End</strong>
-        <strong class="sobre-cargo-3">Front-End</strong>, <strong class="sobre-cargo-2"> Database</strong> and
-        robust architectures.`,
+        <strong class="sobre-cargo-3">Front-End</strong>, <strong class="sobre-cargo-2"> Database</strong>.`,
       btn_explore: "Explore My Work",
 
       sobre_titulo: "About Me",
